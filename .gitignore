@@ -1,0 +1,14 @@
+# Raw data — never commit (GDPR + privacy)
+*.xlsx
+*.csv
+*.xls
+data/
+
+# Jupyter
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+
+# Environment
+.env
+*.env
