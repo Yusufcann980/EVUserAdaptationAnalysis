@@ -48,23 +48,16 @@ The research is grounded in **Technology Acceptance Modeling (TAM)** and **Consu
 ## Repository Structure
 
 ```
-ev-perception-analysis/
+EVUserAdaptationAnalysis/
 │
-├── notebooks/
-│   └── EVPerception_OrdinalRegression.ipynb   # Main analysis notebook
-│
-├── data/
-│   └── .gitkeep                               # Folder exists but data is NOT committed
-│                                              # See Data Availability section below
-├── survey/
-│   └── EV_Adaptation_User_Experience_Google_Forms.pdf  # Survey instrument (public)
-│
-├── .gitignore                                 # Prevents accidental data commits
-├── requirements.txt                           # Python dependencies
+├── EVPerception_OrdinalRegression_LatestVersion.ipynb   # Main analysis notebook
+├── EV Adaptation User Experience - Google Forms.pdf     # Survey instrument (public)
+├── .gitignore                                           # Prevents accidental data commits
+├── requirements.txt                                     # Python dependencies
 └── README.md
 ```
 
-> **Note:** The `data/` folder is intentionally empty in this repository. The raw dataset is not published for privacy and GDPR reasons. See the section below for details.
+> **Note:** The raw dataset is not included in this repository. It is not published for privacy and GDPR reasons. To run the notebook locally, create a `data/` folder and place your own file in it. See the section below for details.
 
 ---
 
@@ -140,7 +133,7 @@ The dataset contains Likert-scale survey responses encoded as follows:
 
 ## Survey Instrument
 
-The primary data was collected via a structured Google Forms survey titled *"User Experience in EV Adaptation"* (15.01.2024). The survey instrument (`survey/` folder) is included in this repository as it contains no personal data.
+The primary data was collected via a structured Google Forms survey titled *"User Experience in EV Adaptation"* (15.01.2024). The survey instrument (`EV Adaptation User Experience - Google Forms.pdf`) is included in this repository as it contains no personal data.
 
 The survey includes:
 - **Demographics:** Age group, country of residence
@@ -242,7 +235,7 @@ Or in Google Colab:
 ### Option A — Google Colab (Recommended)
 
 1. Place your copy of `UserPerception.xlsx` in your own Google Drive
-2. Open `notebooks/EVPerception_OrdinalRegression.ipynb` in Google Colab
+2. Open `EVPerception_OrdinalRegression_LatestVersion.ipynb` in Google Colab
 3. When the data loading cell runs, authenticate with **your own** Google account when prompted
 4. The notebook will auto-locate the file at `MyDrive/UserPerception.xlsx`
 5. Run all cells sequentially
@@ -253,8 +246,8 @@ Or in Google Colab:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/YOUR_USERNAME/ev-perception-analysis.git
-   cd ev-perception-analysis
+   git clone https://github.com/Yusufcann980/EVUserAdaptationAnalysis.git
+   cd EVUserAdaptationAnalysis
    ```
 
 2. Install dependencies:
@@ -266,7 +259,7 @@ Or in Google Colab:
 
 4. Launch Jupyter:
    ```bash
-   jupyter notebook notebooks/EVPerception_OrdinalRegression.ipynb
+   jupyter notebook EVPerception_OrdinalRegression_LatestVersion.ipynb
    ```
 
 ---
